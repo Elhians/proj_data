@@ -1,0 +1,22 @@
+# Environnement virtuel (recréé par chacun, cf. README)
+.venv/
+
+# Données (publiques, re-téléchargeables ; voir README pour la procédure)
+/data/
+/CMAPSSData/
+/fd001/
+
+# Dossiers d'un autre outil, non liés au projet
+/.qodo/
+/managed_context/
+/test_suite_analysis/
+
+# Fichier de travail personnel (le README reprend l'essentiel pour le dépôt de rendu)
+/CONTEXT (1).md
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/

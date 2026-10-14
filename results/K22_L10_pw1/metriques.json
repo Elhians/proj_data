@@ -1,0 +1,116 @@
+{
+  "config": {
+    "L": 10,
+    "pas": 1,
+    "K": 22,
+    "beta": 1.0,
+    "seed": 42,
+    "pos_weight": true,
+    "max_epochs": 200,
+    "patience": 10,
+    "batch_size": 256,
+    "lr": 0.001,
+    "data_dir": "data",
+    "out_dir": "results"
+  },
+  "resumes_jeux": {
+    "train": {
+      "n_fenetres": 16059,
+      "n_positifs": 1840,
+      "taux_positifs": 0.1145774954853976,
+      "n_moteurs": 80,
+      "n_moteurs_avec_positif": 80
+    },
+    "validation": {
+      "n_fenetres": 3672,
+      "n_positifs": 460,
+      "taux_positifs": 0.12527233115468409,
+      "n_moteurs": 20,
+      "n_moteurs_avec_positif": 20
+    },
+    "test": {
+      "n_fenetres": 12196,
+      "n_positifs": 161,
+      "taux_positifs": 0.01320104952443424,
+      "n_moteurs": 100,
+      "n_moteurs_avec_positif": 19
+    }
+  },
+  "tau": 0.899437665939331,
+  "f_beta_validation_au_choix_de_tau": 0.8788221970554926,
+  "metriques": {
+    "validation_tau": {
+      "tau": 0.899437665939331,
+      "taux_positifs": 0.12527233115468409,
+      "accuracy_toujours_normal": 0.8747276688453159,
+      "VP": 388,
+      "FP": 35,
+      "FN": 72,
+      "VN": 3177,
+      "accuracy": 0.9708605664488017,
+      "precision": 0.91725768321513,
+      "rappel": 0.8434782608695652,
+      "F1": 0.8788221970554926,
+      "PR_AUC": 0.9555348401498321,
+      "PR_AUC_hasard": 0.12527233115468409,
+      "ROC_AUC": 0.9915452921111051
+    },
+    "validation_0.5": {
+      "tau": 0.5,
+      "taux_positifs": 0.12527233115468409,
+      "accuracy_toujours_normal": 0.8747276688453159,
+      "VP": 440,
+      "FP": 201,
+      "FN": 20,
+      "VN": 3011,
+      "accuracy": 0.9398148148148148,
+      "precision": 0.6864274570982839,
+      "rappel": 0.9565217391304348,
+      "F1": 0.7992733878292461,
+      "PR_AUC": 0.9555348401498321,
+      "PR_AUC_hasard": 0.12527233115468409,
+      "ROC_AUC": 0.9915452921111051
+    },
+    "test_tau": {
+      "tau": 0.899437665939331,
+      "taux_positifs": 0.01320104952443424,
+      "accuracy_toujours_normal": 0.9867989504755658,
+      "VP": 101,
+      "FP": 29,
+      "FN": 60,
+      "VN": 12006,
+      "accuracy": 0.99270252541817,
+      "precision": 0.7769230769230769,
+      "rappel": 0.6273291925465838,
+      "F1": 0.6941580756013745,
+      "PR_AUC": 0.7673393035785988,
+      "PR_AUC_hasard": 0.01320104952443424,
+      "ROC_AUC": 0.9892425560025495
+    },
+    "test_0.5": {
+      "tau": 0.5,
+      "taux_positifs": 0.01320104952443424,
+      "accuracy_toujours_normal": 0.9867989504755658,
+      "VP": 145,
+      "FP": 217,
+      "FN": 16,
+      "VN": 11818,
+      "accuracy": 0.9808953755329616,
+      "precision": 0.4005524861878453,
+      "rappel": 0.9006211180124224,
+      "F1": 0.5544933078393881,
+      "PR_AUC": 0.7673393035785988,
+      "PR_AUC_hasard": 0.01320104952443424,
+      "ROC_AUC": 0.9892425560025495
+    }
+  },
+  "metier_test": {
+    "n_moteurs": 100,
+    "n_moteurs_avec_anomalie": 19,
+    "n_moteurs_anomalie_detectes": 14,
+    "n_moteurs_anomalie_ayant_alerte": 14,
+    "delai_alerte_median_si_alerte": 21.5,
+    "total_fausses_alertes": 29,
+    "n_moteurs_avec_fausse_alerte": 7
+  }
+}

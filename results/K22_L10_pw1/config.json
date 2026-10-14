@@ -1,0 +1,14 @@
+{
+  "L": 10,
+  "pas": 1,
+  "K": 22,
+  "beta": 1.0,
+  "seed": 42,
+  "pos_weight": true,
+  "max_epochs": 200,
+  "patience": 10,
+  "batch_size": 256,
+  "lr": 0.001,
+  "data_dir": "data",
+  "out_dir": "results"
+}
